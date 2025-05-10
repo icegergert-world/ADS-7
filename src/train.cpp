@@ -19,8 +19,7 @@ void Train::addCar(bool lit) {
         first = newWagon;
         first->next = first;
         first->prev = first;
-    }
-    else {
+    } else {
         Car* tail = first->prev;
         tail->next = newWagon;
         newWagon->prev = tail;
