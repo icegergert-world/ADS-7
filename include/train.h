@@ -8,10 +8,12 @@ class Train {
         bool light;
         Car* next;
         Car* prev;
-        explicit Car(bool illumination) : light(illumination), next(nullptr), prev(nullptr) {}
+        explicit Car(bool illumination)
+            : light(illumination), next(nullptr), prev(nullptr) {}
     };
     int countOp;
     Car* first;
+
  public:
     Train();
     ~Train();
